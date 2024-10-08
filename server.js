@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res.send("Hello employees!");
 });
 
-app.use("/employees-router", require("./api/employees-router")); //potential code break
+app.use("/employees", require("./api/employee-router")); //potential code break
 
 app.use((req, res, next) => {
   next({ status: 404, message: "Endpoint not found"});
