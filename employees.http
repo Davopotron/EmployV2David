@@ -15,3 +15,7 @@ GET {{host}}/employees/123
 
 ### Get random employee
 GET {{host}}/employees/random
+
+### Add a new employee
+
+POST {{host}}/employees
