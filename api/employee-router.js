@@ -22,3 +22,9 @@ router.get("/:id", (req, res) => {
     res.status(404).send(`There is no employee with id ${id}.`);
   }
 });
+
+router.post("/", (req, res) => {
+    const { employee } = req.body;
+    employees.push(employee);
+    res.status(201).json({ employee });
+});
