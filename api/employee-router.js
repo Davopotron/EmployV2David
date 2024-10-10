@@ -34,8 +34,8 @@ router.get("/:id", (req, res) => {
   }
 });
 
-router.post("/", (req, res) => {
-    const { employee } = req.body;
-    employees.push(employee);
-    res.status(201).json({ employee });
-});
+// router.post("/", (req, res) => {
+//     const { employee } = req.body;
+//     employees.push(employee);
+//     res.status(201).json({ employee });
+// });
